@@ -42,7 +42,8 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
-    buildFeatures {
+      buildFeatures {
+        buildConfig true // Enable BuildConfig
         compose true
     }
     composeOptions {

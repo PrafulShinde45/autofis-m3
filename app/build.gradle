@@ -7,10 +7,11 @@ plugins {
 }
 
 android {
+    namespace 'me.siddheshkothadi.autofism3'  // Add your namespace here
     compileSdk 32
 
     defaultConfig {
-        applicationId "me.siddheshkothadi.autofism3"
+        applicationId "me.siddheshkothadi.autofism3"  // Make sure this matches the namespace
         minSdk 21
         targetSdk 32
         versionCode 1
@@ -20,7 +21,6 @@ android {
         vectorDrawables {
             useSupportLibrary true
         }
-
         Properties properties = new Properties()
         properties.load(project.rootProject.file("local.properties").newDataInputStream())
 

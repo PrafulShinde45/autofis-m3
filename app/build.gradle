@@ -134,15 +134,16 @@ dependencies {
     implementation  "com.google.protobuf:protobuf-javalite:3.21.12"
 }
 
+
 protobuf {
     protoc {
-        artifact = "com.google.protobuf:protoc:3.21.12"
+        artifact = "com.google.protobuf:protoc:3.19.4" // Version to match your needs
     }
     generateProtoTasks {
         all().each { task ->
             task.builtins {
                 java {
-                    option 'lite'
+                    option 'lite' // Use lite if necessary
                 }
             }
         }
